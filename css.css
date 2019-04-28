@@ -1,14 +1,14 @@
 .calculadora{
 	position: absolute;
-	top: 55%;
+	top: 50%;
 	width: 50%;
 	height: 50%;
 	left: 25%;
 	right: 25%;
 }
 .botao{
-	margin-left: 5%;
-	margin-right: 5%;
+	align-content: center;
+	margin: 1px 20px 1px 5px;
 	border-color: black;
 }
 .botao_parc{
@@ -31,4 +31,7 @@
 .table-overflow {
     max-height:200px;
     overflow-y:auto;
+}
+.teste {
+	margin-top: 30px;
 }

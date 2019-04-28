@@ -32,7 +32,7 @@ $(document).ready(function(){
 
     $("input[name=result]").click(function(){
         try {
-            $("#display").val((eval($("#display").val()))); 
+            $("#display").val(eval($("#display").val())); 
         } catch (e) {
             if (e instanceof SyntaxError) {
                 $("#display").val("Error");
@@ -65,8 +65,8 @@ $(document).ready(function(){
 
     $("input[name = gerar]").click(function(){
         $('#table').slideToggle(1000);
-        var parcelas = $("input[name = parcelas]").val(); //simulando 4 parcelas
-        var valor =$("#result_parc").val(); //simulando este valor
+        var parcelas = $("input[name = parcelas]").val(); 
+        var valor =$("#result_parc").val(); 
         var table = '';
         var x = 1;
         while (x <= parcelas) {

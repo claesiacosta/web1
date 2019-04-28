@@ -23,7 +23,7 @@
     <div class="row d-flex justify-content-around">
         <button id="cal" class="btn btn-outline-success btn-md">Calculadora</button>
         <button id="sim" class="btn btn-outline-success btn-md">Simulação de Parcelas</button>
-        <button id="mega" class="btn btn-outline-success btn-md">MegaSena</button>
+        <button id="mega" class="btn btn-outline-success btn-md">Mega Sena</button>
     </div>
 
 	<div id="sectioncalculator">
@@ -37,7 +37,7 @@
 					        <div class="row form-group">
 					        	<input type="button" name="btn" id="va" value="(" class="form-control col-md-3 mbottom- btn btn-dark btn-sm btnSpace">
 					        	<input type="button" name="btn" id="va" value=")" class="form-control col-md-3 mbottom- btn btn-dark btn-sm btnSpace">
-					        	<input type="button" name="porc" id="va" value="%" class="form-control col-md-3 mbottom- btn btn-dark btn-sm btnSpace">
+					        	<input type="button" name="btn" id="va" value="%" class="form-control col-md-3 mbottom- btn btn-dark btn-sm btnSpace">
 					        	<input type="button" name="ce" id="va" value="C" class="form-control col-md-2 mbottom- btn btn-warning btn-sm btnSpace">
 					        </div>
 					        <div class="row form-group">
@@ -72,12 +72,14 @@
     <div id="sectionparcelas" >
             <div class="row d-flex justify-content-center">
             <form>
-                    <div class="form-group">
-                        <br><br><label>Valor: <input type="number" class="form-control" name="valor" id="idValor" class="text" value="valor" ></label>
-                        <label>Quantidade de Parcelas: <input  class="form-control" type="number" name="parcelas" class="text" id="idParcela" value="parcelas"></label><br>
-                        <input type="button" class="btn btn-warning btn-lg btn-block botao_parc" name="calcular" value="Calcular" >
-                        <input name="valor_parc" id= "result_parc" class="col-md-12 text-center hid" disabled>
-                        <input type="button" class="btn btn-warning btn-lg btn-block botao_parc" name="gerar" value="Gerar tabelas de parcelas">
+                    <div class="form-group"><br>
+                        <center>
+                        	<label>Valor <input type="number" class="form-control" name="valor" id="idValor" class="text" value="valor" ></label>
+                        	<label>Quantidade de Parcelas <input  class="form-control" type="number" name="parcelas" class="text" id="idParcela" value="parcelas"></label><br>
+                        	<input type="button" class="btn btn-warning btn-lg btn-block botao_parc" name="calcular" value="Calcular" >
+                        	<input name="valor_parc" id= "result_parc" class="col-md-12 text-center hid" disabled>
+                        	<input type="button" class="btn btn-warning btn-lg btn-block botao_parc" name="gerar" value="Gerar tabelas de parcelas">
+                        </center>
                         <div class="table-overflow">
                         	<table id="table" class="table hid">
                         	  <thead>
@@ -104,18 +106,29 @@
 	<div id="sectionmega" >
             <div class="form-group">
             	<div class="col">
-            		<input type="button" class="btn btn-secondary btn-lg btn-block" name="mega" value="Gerar números">
-            		<div class="hid" name="mega">
-            			<div class="row">
-            				<input class="col form-control botao text-center" name="numero1" id="numeros" disabled>
-            				<input class="col form-control botao text-center" name="numero2" id="numeros" disabled>
-            				<input class="col form-control botao text-center" name="numero3" id="numeros" disabled>
-            				<input class="col form-control botao text-center" name="numero4" id="numeros" disabled>
-            				<input class="col form-control botao text-center" name="numero5" id="numeros" disabled>
-            				<input class="col form-control botao text-center" name="numero6" id="numeros" disabled>
+            		<div class="row">
+            			<div class="col-md-3"></div>
+            			<div class="col-md-6"><br>
+            				<input type="button" class="btn btn-secondary btn-lg btn-block" name="mega" value="Gerar números">
             			</div>
-            			
+            			<div class="col-md-3"></div>
             		</div>
+            		<div class="row form-group">
+            			<div class="col-md-2"></div>
+            			<div class="col-md-8 teste">
+            				<center>
+            					<div class="hid" name="mega">
+            							<input class="col-md-1 text-center botao" name="numero1" id="numeros" disabled>
+            							<input class="col-md-1 text-center botao" name="numero2" id="numeros" disabled>
+            							<input class="col-md-1 text-center botao" name="numero3" id="numeros" disabled>
+            							<input class="col-md-1 text-center botao" name="numero4" id="numeros" disabled>
+            							<input class="col-md-1 text-center botao" name="numero5" id="numeros" disabled>
+            							<input class="col-md-1 text-center botao" name="numero6" id="numeros" disabled>
+            					</div>
+            				</center>
+            			</div>
+            			<div class="col-md-2"></div>
+            		
             	</div>
                 
             </div>
