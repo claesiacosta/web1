@@ -45,7 +45,10 @@ $(document).ready(function(){
         for (var i = 0; i < 6; i++) {
             valores[i] = Math.floor(Math.random() * 99 + 1);
         }
-        $("#numeros").val(valores)
+        $.each(valores, function( index, value ) {
+            $("input[name = numero"+(index+1)+"]").val(value)
+        });
+        $('div[name=mega]').slideDown(500);
     });
 
     $("input[name = calcular]").click(function(){

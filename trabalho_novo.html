@@ -6,120 +6,8 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
 <head>
-	<title>Calculator</title>
-	<style type="text/css" >
-		.calculadora{
-			position: absolute;
-			top: 55%;
-			width: 50%;
-			height: 50%;
-			left: 25%;
-			right: 25%;
-		}
-
-        /*.titleheader{
-            background-color: rgba(128,128,128, 0.5);
-            width: 300px;  
-            position: absolute;
-            border-radius: 10px;
-            align-content: center;
-            font-size: 50px;
-            top: 5%;
-            left: 36%;
-        }
-        .titleheader2{
-            background-color: rgba(128,128,128, 0.5);
-            width: 300px;  
-            position: absolute;
-            border-radius: 10px;
-            align-content: center;
-            font-size: 50px;
-            top: 120%;
-            left: 36%;
-        }
-        .titleheader3{
-            background-color: rgba(128,128,128, 0.5);
-            width: 300px;  
-            position: absolute;
-            border-radius: 10px;
-            align-content: center;
-            font-size: 50px;
-            top: 225%;
-            left: 36%;
-        }
-		#sectioncalculator{
-            background-color: aqua;
-            width: 100%;
-			height: 750px;
-		}
-		#sectionparcelas{
-            /*background-color: blueviolet;
-            width: 100%;
-			height: 750px;
-		}
-		#sectionmega{
-            /*background-color:brown;
-            width: 100%;
-			height: 750px;
-
-        }
-        #sectionfinal{
-            /*background-color: aqua;
-            width: 100%;
-
-        }*/
-        /*.divback{
-			background-color: rgba(128,128,128, 0.5);
-            top: 20%;
-            left: 36%;
-			position: absolute;
-			width: 300px;
-			height: 300px;
-			border-radius: 10px;
-		}
-        .text{
-			position: absolute;
-			left: 7%;
-			top: 8%;
-			border-radius: 6px;
-			width: 250px;
-			height: 31px;
-			font-size: 18px;
-			text-align: right;
-			resize: none;
-		}
-		tr{
-			font-size: 20px;
-			background-color: rgba(128,128,128, 0.8);
-		}
-        input{
-			border-radius: 5px;
-		}
-        /*.parcelas{
-			background-color: rgba(128,128,128, 0.5);
-			position: absolute;
-            top: 140%;
-            left: 36%;
-			width: 300px;
-			height: 300px;
-			border-radius: 10px;
-		}
-        .gerador{
-			background-color: rgba(128,128,128, 0.5);
-			position: absolute;
-            top: 240%;
-            left: 36%;
-			width: 300px;
-			height: 300px;
-			border-radius: 10px;
-		}
-        .buttonDown{
-			position: absolute;
-			width: 120px;
-			height: 120px;
-			left: 50%;
-		}*/
-    </style>
+	<title>WEB 1</title>
+	<link rel="stylesheet" href="css.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="jquery-3.4.0.min.js"></script>
     <script type = "text/javascript" src = "script.js"></script>
@@ -139,45 +27,46 @@
     </div>
 
 	<div id="sectioncalculator">
-		<div class="container">
-			<div class="calculadora">
-					<div class="row">
-						<input type="text" name="display" class="col-md-12" id="display" style="text-align: right;" disabled >	
+				<div class="container">
+					<div class="calculadora">
+						<center>
+							<div class="row form-group">
+								<input type="text" name="display" class="col form-control" id="display" style="text-align: right;" disabled >	
+							</div>
+					        
+					        <div class="row form-group">
+					        	<input type="button" name="btn" id="va" value="(" class="form-control col-md-3 mbottom- btn btn-dark btn-sm btnSpace">
+					        	<input type="button" name="btn" id="va" value=")" class="form-control col-md-3 mbottom- btn btn-dark btn-sm btnSpace">
+					        	<input type="button" name="porc" id="va" value="%" class="form-control col-md-3 mbottom- btn btn-dark btn-sm btnSpace">
+					        	<input type="button" name="ce" id="va" value="C" class="form-control col-md-2 mbottom- btn btn-warning btn-sm btnSpace">
+					        </div>
+					        <div class="row form-group">
+					        	<input type="button" name="btn" id="va" value="7" class="form-control col-md-3 mbottom- btn btn-secondary btn-sm btnSpace">
+					        	<input type="button" name="btn" id="va" value="8" class="form-control col-md-3 mbottom- btn btn-secondary btn-sm btnSpace">
+					        	<input type="button" name="btn" id="va" value="9" class="form-control col-md-3 mbottom- btn btn-secondary btn-sm btnSpace">
+					        	<input type="button" name="btn" id="va" value="/" class="form-control col-md-2 mbottom- btn btn-dark btn-sm btnSpace">
+					        </div>
+					        <div class="row form-group">
+					        	<input type="button" name="btn" id="va" value="4" class="form-control col-md-3 mbottom- btn btn-secondary btn-sm btnSpace">
+					        	<input type="button" name="btn" id="va" value="5" class="form-control col-md-3 mbottom- btn btn-secondary btn-sm btnSpace">
+					        	<input type="button" name="btn" id="va" value="6" class="form-control col-md-3 mbottom- btn btn-secondary btn-sm btnSpace">
+					        	<input type="button" name="btn" id="va" value="*" class="form-control col-md-2 mbottom- btn btn-dark btn-sm btnSpace">
+					        </div>
+					        <div class="row form-group">
+					        	<input type="button" name="btn" id="va" value="1" class="form-control col-md-3 mbottom- btn btn-secondary btn-sm btnSpace">
+					        	<input type="button" name="btn" id="va" value="2" class="form-control col-md-3 mbottom- btn btn-secondary btn-sm btnSpace">
+					        	<input type="button" name="btn" id="va" value="3" class="form-control col-md-3 mbottom- btn btn-secondary btn-sm btnSpace">
+					        	<input type="button" name="btn" id="va" value="-" class="form-control col-md-2 mbottom- btn btn-dark btn-sm btnSpace">
+					        </div>
+					        <div class="row form-group">
+					        	<input type="button" name="btn" id="va" value="0" class="form-control col-md-3 mbottom- btn btn-secondary btn-sm btnSpace">
+					        	<input type="button" name="btn" id="va" value="." class="form-control col-md-3 mbottom- btn btn-secondary btn-sm btnSpace" >
+					        	<input type="button" name="result" id="va" value="=" class="form-control col-md-3 mbottom- btn btn-primary btn-sm btnSpace">
+					        	<input type="button" id="sum" name="btn" value="+" class="form-control col-md-2 mbottom- btn btn-dark btn-sm btnSpace">
+							</div>
+						</center>
 					</div>
-			        
-			        <div class="row">
-			        	<input type="button" name="btn" id="va" value="(" class="col-md-3 mbottom- btn btn-dark btn-sm btnSpace">
-			        	<input type="button" name="btn" id="va" value=")" class="col-md-3 mbottom- btn btn-dark btn-sm btnSpace">
-			        	<input type="button" name="porc" id="va" value="%" class="col-md-3 mbottom- btn btn-dark btn-sm btnSpace">
-			        	<input type="button" name="ce" id="va" value="C" class="col-md-3 mbottom- btn btn-warning btn-sm btnSpace">
-			        </div>
-			        <div class="row">
-			        	<input type="button" name="btn" id="va" value="7" class="col-md-3 mbottom- btn btn-secondary btn-sm">
-			        	<input type="button" name="btn" id="va" value="8" class="col-md-3 mbottom- btn btn-secondary btn-sm">
-			        	<input type="button" name="btn" id="va" value="9" class="col-md-3 mbottom- btn btn-secondary btn-sm">
-			        	<input type="button" name="btn" id="va" value="/" class="col-md-3 mbottom- btn btn-dark btn-sm">
-			        </div>
-			        <div class="row">
-			        	<input type="button" name="btn" id="va" value="4" class="col-md-3 mbottom- btn btn-secondary btn-sm">
-			        	<input type="button" name="btn" id="va" value="5" class="col-md-3 mbottom- btn btn-secondary btn-sm">
-			        	<input type="button" name="btn" id="va" value="6" class="col-md-3 mbottom- btn btn-secondary btn-sm">
-			        	<input type="button" name="btn" id="va" value="*" class="col-md-3 mbottom- btn btn-dark btn-sm">
-			        </div>
-			        <div class="row">
-			        	<input type="button" name="btn" id="va" value="1" class="col-md-3 mbottom- btn btn-secondary btn-sm">
-			        	<input type="button" name="btn" id="va" value="2" class="col-md-3 mbottom- btn btn-secondary btn-sm">
-			        	<input type="button" name="btn" id="va" value="3" class="col-md-3 mbottom- btn btn-secondary btn-sm">
-			        	<input type="button" name="btn" id="va" value="-" class="col-md-3 mbottom- btn btn-dark btn-sm">
-			        </div>
-			        <div class="row">
-			        	<input type="button" name="btn" id="va" value="0" class="col-md-3 mbottom- btn btn-secondary btn-sm">
-			        	<input type="button" name="btn" id="va" value="." class="col-md-3 mbottom- btn btn-secondary btn-sm" >
-			        	<input type="button" name="result" id="va" value="=" class="col-md-3 mbottom- btn btn-primary btn-sm">
-			        	<input type="button" id="sum" name="btn" value="+" class="col-md-3 mbottom- btn btn-dark btn-sm">
-			        </div>
-			</div>
-        </div>
-            <center> <!--<a href="#sectionparcelas" class="buttonDown" style="top: 70%; position: absolute;"><img src="down.png" width="50px" height="50px" alt=""/></a> --></center>
+		        </div>
     </div>
     
     <div id="sectionparcelas" >
@@ -187,9 +76,9 @@
                         <br><br><label>Valor: <input type="number" class="form-control" name="valor" id="idValor" class="text" value="valor" ></label>
                         <label>Quantidade de Parcelas: <input  class="form-control" type="number" name="parcelas" class="text" id="idParcela" value="parcelas"></label><br>
                         <input type="button" class="btn btn-warning btn-lg btn-block" name="calcular" value="Calcular" >
-                        <input name="valor_parc" id= "result_parc" class="col-md-12 text-center" style="display:none;" disabled>
+                        <input name="valor_parc" id= "result_parc" class="col-md-12 text-center hid" disabled>
                         <input type="button" class="btn btn-warning btn-lg btn-block" name="gerar" value="Gerar tabelas de parcelas">
-        				<table id="table" style="display:none;" class="table">
+        				<table id="table" class="table hid">
         				  <thead>
         				    <tr>
         				      <th>Parcelas</th>
@@ -206,18 +95,27 @@
                     </div>
             </form>
         </div>
-            <center><!--<a href="#sectionmega" class="buttonDown" style="top: 190%; position: absolute;"><img src="down.png" width="50px" height="50px" alt=""/></a> --></center>
 
     </div>
 
 	<div id="sectionmega" >
-            <div class="row d-flex justify-content-center">MegaSena
-                    <input type="button" name="mega" value="Gerador">
-                    <input class="text" name="numeros" id="numeros" readonly >
+            <div class="form-group">
+            	<div class="col">
+            		<input type="button" class="btn btn-secondary btn-lg btn-block" name="mega" value="Gerar números">
+            		<div class="hid" name="mega">
+            			<div class="row">
+            				<input class="col form-control botao" name="numero1" id="numeros" disabled>
+            				<input class="col form-control botao" name="numero2" id="numeros" disabled>
+            				<input class="col form-control botao" name="numero3" id="numeros" disabled>
+            				<input class="col form-control botao" name="numero4" id="numeros" disabled>
+            				<input class="col form-control botao" name="numero5" id="numeros" disabled>
+            				<input class="col form-control botao" name="numero6" id="numeros" disabled>
+            			</div>
+            			
+            		</div>
+            	</div>
                 
             </div>
     </div>
-    
-    <!--<div id="sectionfinal"><center>Trabalho Web 1 - por Claésia Costa </center></div>-->
 </body>
 </html>
