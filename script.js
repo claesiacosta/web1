@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.icon').html('<img src="img.gif">');
+    //$('.icon').html('<img src="img.gif">');
 
     $('#sectioncalculator, #sectionparcelas, #sectionmega').hide();
     var atual;
@@ -49,6 +49,7 @@ $(document).ready(function(){
     });
 
     $("input[name = calcular]").click(function(){
+        $('#result_parc').slideUp(10);
         $('#table').slideUp(600);
         if ($("input[name = parcelas]").val() > 5) {
             val = $("input[name = valor]").val()/$("input[name = parcelas]").val();
@@ -56,7 +57,7 @@ $(document).ready(function(){
         }else{
             $("#result_parc").val(($("input[name = valor]").val()/$("input[name = parcelas]").val()).toFixed(2));
         }
-
+        $('#result_parc').slideDown(500);
     });
 
     $("input[name = gerar]").click(function(){
