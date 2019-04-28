@@ -7,8 +7,13 @@
 	right: 25%;
 }
 .botao{
-	margin-left: 2%;
-	margin-right: 2%;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-color: black;
+}
+.botao_parc{
+	margin-top: 2%;
+	margin-bottom: 2%;
 	border-color: black;
 }
 .hid{
@@ -22,4 +27,8 @@
 .rows{
 	margin-left: 4px;
 	margin-right: 2px;
+}
+.table-overflow {
+    max-height:200px;
+    overflow-y:auto;
 }

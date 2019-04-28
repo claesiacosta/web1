@@ -75,19 +75,22 @@
                     <div class="form-group">
                         <br><br><label>Valor: <input type="number" class="form-control" name="valor" id="idValor" class="text" value="valor" ></label>
                         <label>Quantidade de Parcelas: <input  class="form-control" type="number" name="parcelas" class="text" id="idParcela" value="parcelas"></label><br>
-                        <input type="button" class="btn btn-warning btn-lg btn-block" name="calcular" value="Calcular" >
+                        <input type="button" class="btn btn-warning btn-lg btn-block botao_parc" name="calcular" value="Calcular" >
                         <input name="valor_parc" id= "result_parc" class="col-md-12 text-center hid" disabled>
-                        <input type="button" class="btn btn-warning btn-lg btn-block" name="gerar" value="Gerar tabelas de parcelas">
-        				<table id="table" class="table hid">
-        				  <thead>
-        				    <tr>
-        				      <th>Parcelas</th>
-        				      <th>Valor</th>
-        				    </tr>
-        				  </thead>
-        				  <tbody>
-        				  </tbody>
-        				</table>
+                        <input type="button" class="btn btn-warning btn-lg btn-block botao_parc" name="gerar" value="Gerar tabelas de parcelas">
+                        <div class="table-overflow">
+                        	<table id="table" class="table hid">
+                        	  <thead>
+                        	    <tr>
+                        	      <th>Parcelas</th>
+                        	      <th>Valor</th>
+                        	    </tr>
+                        	  </thead>
+                        	  <tbody>
+                        	  </tbody>
+                        	</table>
+                        </div>
+        				
                         
         
                     </div>
@@ -104,12 +107,12 @@
             		<input type="button" class="btn btn-secondary btn-lg btn-block" name="mega" value="Gerar números">
             		<div class="hid" name="mega">
             			<div class="row">
-            				<input class="col form-control botao" name="numero1" id="numeros" disabled>
-            				<input class="col form-control botao" name="numero2" id="numeros" disabled>
-            				<input class="col form-control botao" name="numero3" id="numeros" disabled>
-            				<input class="col form-control botao" name="numero4" id="numeros" disabled>
-            				<input class="col form-control botao" name="numero5" id="numeros" disabled>
-            				<input class="col form-control botao" name="numero6" id="numeros" disabled>
+            				<input class="col form-control botao text-center" name="numero1" id="numeros" disabled>
+            				<input class="col form-control botao text-center" name="numero2" id="numeros" disabled>
+            				<input class="col form-control botao text-center" name="numero3" id="numeros" disabled>
+            				<input class="col form-control botao text-center" name="numero4" id="numeros" disabled>
+            				<input class="col form-control botao text-center" name="numero5" id="numeros" disabled>
+            				<input class="col form-control botao text-center" name="numero6" id="numeros" disabled>
             			</div>
             			
             		</div>
