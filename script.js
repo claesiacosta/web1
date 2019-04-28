@@ -41,6 +41,7 @@ $(document).ready(function(){
     })
 
     $("input[name=mega]").click(function(){
+        $('div[name=mega]').slideUp(10);
         valores = [];
         for (var i = 0; i < 6; i++) {
             valores[i] = Math.floor(Math.random() * 99 + 1);
