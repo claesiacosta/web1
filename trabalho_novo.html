@@ -8,11 +8,14 @@
 <head>
 	<title>Calculator</title>
 	<style type="text/css" >
-		/*body{
-			background: url('gif.gif') no-repeat fixed;
-			background-size: cover;
-			/*background-size: cover;
-		}*/
+		.calculadora{
+			position: absolute;
+			top: 55%;
+			width: 50%;
+			height: 50%;
+			left: 25%;
+			right: 25%;
+		}
 
         /*.titleheader{
             background-color: rgba(128,128,128, 0.5);
@@ -122,15 +125,22 @@
     <script type = "text/javascript" src = "script.js"></script>
 </head>
 <body>
+	<div class="container-fluid"> 
+	    <div class="row">
+	        <div class="col">
+	            <div class="icon text-center"></div>
+	        </div>
+	    </div>
+	</div>
     <div class="row d-flex justify-content-around">
-        <button id="cal" class="btn btn-md">Calculadora</button>
-        <button id="sim" class="btn btn-md">Simulação de Parcelas</button>
-        <button id="mega" class="btn btn-md">MegaSena</button>
+        <button id="cal" class="btn btn-outline-success btn-md">Calculadora</button>
+        <button id="sim" class="btn btn-outline-success btn-md">Simulação de Parcelas</button>
+        <button id="mega" class="btn btn-outline-success btn-md">MegaSena</button>
     </div>
 
 	<div id="sectioncalculator">
 		<div class="container">
-			<div class="">
+			<div class="calculadora">
 					<div class="row">
 						<input type="text" name="display" class="col-md-12" id="display" style="text-align: right;" disabled >	
 					</div>
@@ -145,7 +155,7 @@
 			        	<input type="button" name="btn" id="va" value="7" class="col-md-3 mbottom- btn btn-secondary btn-sm">
 			        	<input type="button" name="btn" id="va" value="8" class="col-md-3 mbottom- btn btn-secondary btn-sm">
 			        	<input type="button" name="btn" id="va" value="9" class="col-md-3 mbottom- btn btn-secondary btn-sm">
-			        	<input type="button" name="btn" id="va" value="÷" class="col-md-3 mbottom- btn btn-dark btn-sm">
+			        	<input type="button" name="btn" id="va" value="/" class="col-md-3 mbottom- btn btn-dark btn-sm">
 			        </div>
 			        <div class="row">
 			        	<input type="button" name="btn" id="va" value="4" class="col-md-3 mbottom- btn btn-secondary btn-sm">
@@ -171,24 +181,25 @@
     </div>
     
     <div id="sectionparcelas" >
-            <div class="row d-flex justify-content-center">Parcelas
+            <div class="row d-flex justify-content-center">
             <form>
-                    <div class="parcelas" class="row d-flex justify-content-center">
-                        <h3>Valor <input type="number" name="valor" id="idValor" class="text" value="valor" ></h3>
-                        <h3>Quantidade de Parcelas <input type="number" name="parcelas" class="text" id="idParcela" value="parcelas" ></h3>
-                        <input type="button" name="calcular" value="Calcular" >
-                        <input type="button" name="gerar" value="Gerar">
+                    <div class="form-group">
+                        <label>Valor: <input type="number" class="form-control" name="valor" id="idValor" class="text" value="valor" ></label>
+                        <label>Quantidade de Parcelas: <input  class="form-control" type="number" name="parcelas" class="text" id="idParcela" value="parcelas"></label><br>
+                        <input type="button"  name="calcular" value="Calcular" >
+                        <input class="text-center" name="valor_parc" id= "result_parc" disabled>
+                        <input type="button" name="gerar" value="Gerar tabelas de parcelas">
         				<table id="table" style="display:none;" class="table">
         				  <thead>
         				    <tr>
-        				      <th>parcela</th>
-        				      <th>valor</th>
+        				      <th>Parcelas</th>
+        				      <th>Valor</th>
         				    </tr>
         				  </thead>
         				  <tbody>
         				  </tbody>
         				</table>
-                        <input class="text" name="valor_parc" id= "result_parc" readonly>
+                        
         
                     </div>
                     <div id="divResultado">
@@ -207,6 +218,6 @@
             </div>
     </div>
     
-    <div id="sectionfinal"><center>Trabalho Web 1 - por Claésia Costa </center></div>
+    <!--<div id="sectionfinal"><center>Trabalho Web 1 - por Claésia Costa </center></div>-->
 </body>
 </html>
