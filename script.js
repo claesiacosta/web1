@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    //$('.icon').html('<img src="img.gif">');
+    $('.icon').html('<img src="img.gif">');
 
     $('#sectioncalculator, #sectionparcelas, #sectionmega').hide();
     var atual;
