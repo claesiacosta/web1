@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<head>
+	<title>Calculator</title>
+	<style type="text/css" >
+		/*body{
+			background: url('gif.gif') no-repeat fixed;
+			background-size: cover;
+			/*background-size: cover;
+		}*/
+
+        /*.titleheader{
+            background-color: rgba(128,128,128, 0.5);
+            width: 300px;  
+            position: absolute;
+            border-radius: 10px;
+            align-content: center;
+            font-size: 50px;
+            top: 5%;
+            left: 36%;
+        }
+        .titleheader2{
+            background-color: rgba(128,128,128, 0.5);
+            width: 300px;  
+            position: absolute;
+            border-radius: 10px;
+            align-content: center;
+            font-size: 50px;
+            top: 120%;
+            left: 36%;
+        }
+        .titleheader3{
+            background-color: rgba(128,128,128, 0.5);
+            width: 300px;  
+            position: absolute;
+            border-radius: 10px;
+            align-content: center;
+            font-size: 50px;
+            top: 225%;
+            left: 36%;
+        }
+		#sectioncalculator{
+            background-color: aqua;
+            width: 100%;
+			height: 750px;
+		}
+		#sectionparcelas{
+            /*background-color: blueviolet;
+            width: 100%;
+			height: 750px;
+		}
+		#sectionmega{
+            /*background-color:brown;
+            width: 100%;
+			height: 750px;
+
+        }
+        #sectionfinal{
+            /*background-color: aqua;
+            width: 100%;
+
+        }*/
+        /*.divback{
+			background-color: rgba(128,128,128, 0.5);
+            top: 20%;
+            left: 36%;
+			position: absolute;
+			width: 300px;
+			height: 300px;
+			border-radius: 10px;
+		}
+        .text{
+			position: absolute;
+			left: 7%;
+			top: 8%;
+			border-radius: 6px;
+			width: 250px;
+			height: 31px;
+			font-size: 18px;
+			text-align: right;
+			resize: none;
+		}
+		tr{
+			font-size: 20px;
+			background-color: rgba(128,128,128, 0.8);
+		}
+        input{
+			border-radius: 5px;
+		}
+        /*.parcelas{
+			background-color: rgba(128,128,128, 0.5);
+			position: absolute;
+            top: 140%;
+            left: 36%;
+			width: 300px;
+			height: 300px;
+			border-radius: 10px;
+		}
+        .gerador{
+			background-color: rgba(128,128,128, 0.5);
+			position: absolute;
+            top: 240%;
+            left: 36%;
+			width: 300px;
+			height: 300px;
+			border-radius: 10px;
+		}
+        .buttonDown{
+			position: absolute;
+			width: 120px;
+			height: 120px;
+			left: 50%;
+		}*/
+    </style>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery-3.4.0.min.js"></script>
+    <script type = "text/javascript" src = "script.js"></script>
+</head>
+<body>
+    <div class="row d-flex justify-content-around">
+        <button id="cal" class="btn btn-md">Calculadora</button>
+        <button id="sim" class="btn btn-md">Simulação de Parcelas</button>
+        <button id="mega" class="btn btn-md">MegaSena</button>
+    </div>
+
+	<div id="sectioncalculator">
+		<div class="container">
+			<div class="">
+					<div class="row">
+						<input type="text" name="display" class="col-md-12" id="display" style="text-align: right;" disabled >	
+					</div>
+			        
+			        <div class="row">
+			        	<input type="button" name="btn" id="va" value="(" class="col-md-3 mbottom- btn btn-dark btn-sm btnSpace">
+			        	<input type="button" name="btn" id="va" value=")" class="col-md-3 mbottom- btn btn-dark btn-sm btnSpace">
+			        	<input type="button" name="porc" id="va" value="%" class="col-md-3 mbottom- btn btn-dark btn-sm btnSpace">
+			        	<input type="button" name="ce" id="va" value="C" class="col-md-3 mbottom- btn btn-warning btn-sm btnSpace">
+			        </div>
+			        <div class="row">
+			        	<input type="button" name="btn" id="va" value="7" class="col-md-3 mbottom- btn btn-secondary btn-sm">
+			        	<input type="button" name="btn" id="va" value="8" class="col-md-3 mbottom- btn btn-secondary btn-sm">
+			        	<input type="button" name="btn" id="va" value="9" class="col-md-3 mbottom- btn btn-secondary btn-sm">
+			        	<input type="button" name="btn" id="va" value="÷" class="col-md-3 mbottom- btn btn-dark btn-sm">
+			        </div>
+			        <div class="row">
+			        	<input type="button" name="btn" id="va" value="4" class="col-md-3 mbottom- btn btn-secondary btn-sm">
+			        	<input type="button" name="btn" id="va" value="5" class="col-md-3 mbottom- btn btn-secondary btn-sm">
+			        	<input type="button" name="btn" id="va" value="6" class="col-md-3 mbottom- btn btn-secondary btn-sm">
+			        	<input type="button" name="btn" id="va" value="*" class="col-md-3 mbottom- btn btn-dark btn-sm">
+			        </div>
+			        <div class="row">
+			        	<input type="button" name="btn" id="va" value="1" class="col-md-3 mbottom- btn btn-secondary btn-sm">
+			        	<input type="button" name="btn" id="va" value="2" class="col-md-3 mbottom- btn btn-secondary btn-sm">
+			        	<input type="button" name="btn" id="va" value="3" class="col-md-3 mbottom- btn btn-secondary btn-sm">
+			        	<input type="button" name="btn" id="va" value="-" class="col-md-3 mbottom- btn btn-dark btn-sm">
+			        </div>
+			        <div class="row">
+			        	<input type="button" name="btn" id="va" value="0" class="col-md-3 mbottom- btn btn-secondary btn-sm">
+			        	<input type="button" name="btn" id="va" value="." class="col-md-3 mbottom- btn btn-secondary btn-sm" >
+			        	<input type="button" name="result" id="va" value="=" class="col-md-3 mbottom- btn btn-primary btn-sm">
+			        	<input type="button" id="sum" name="btn" value="+" class="col-md-3 mbottom- btn btn-dark btn-sm">
+			        </div>
+			</div>
+        </div>
+            <center> <!--<a href="#sectionparcelas" class="buttonDown" style="top: 70%; position: absolute;"><img src="down.png" width="50px" height="50px" alt=""/></a> --></center>
+    </div>
+    
+    <div id="sectionparcelas" >
+            <div class="row d-flex justify-content-center">Parcelas
+            <form>
+                    <div class="parcelas" class="row d-flex justify-content-center">
+                        <h3>Valor <input type="number" name="valor" id="idValor" class="text" value="valor" ></h3>
+                        <h3>Quantidade de Parcelas <input type="number" name="parcelas" class="text" id="idParcela" value="parcelas" ></h3>
+                        <input type="button" name="calcular" value="Calcular" >
+                        <input type="button" name="gerar" value="Gerar">
+        				<table id="table" style="display:none;" class="table">
+        				  <thead>
+        				    <tr>
+        				      <th>parcela</th>
+        				      <th>valor</th>
+        				    </tr>
+        				  </thead>
+        				  <tbody>
+        				  </tbody>
+        				</table>
+                        <input class="text" name="valor_parc" id= "result_parc" readonly>
+        
+                    </div>
+                    <div id="divResultado">
+                    </div>
+            </form>
+        </div>
+            <center><!--<a href="#sectionmega" class="buttonDown" style="top: 190%; position: absolute;"><img src="down.png" width="50px" height="50px" alt=""/></a> --></center>
+
+    </div>
+
+	<div id="sectionmega" >
+            <div class="row d-flex justify-content-center">MegaSena
+                    <input type="button" name="mega" value="Gerador">
+                    <input class="text" name="numeros" id="numeros" readonly >
+                
+            </div>
+    </div>
+    
+    <div id="sectionfinal"><center>Trabalho Web 1 - por Claésia Costa </center></div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+	<title>Calculator</title>
+	<style type="text/css" >
+		body{
+			background: url('gif.gif') no-repeat fixed;
+			background-size: cover;
+			/*background-size: cover;*/
+		}
+
+        .titleheader{
+            background-color: rgba(128,128,128, 0.5);
+            width: 300px;  
+            position: absolute;
+            border-radius: 10px;
+            align-content: center;
+            font-size: 50px;
+            top: 5%;
+            left: 36%;
+        }
+        .titleheader2{
+            background-color: rgba(128,128,128, 0.5);
+            width: 300px;  
+            position: absolute;
+            border-radius: 10px;
+            align-content: center;
+            font-size: 50px;
+            top: 120%;
+            left: 36%;
+        }
+        .titleheader3{
+            background-color: rgba(128,128,128, 0.5);
+            width: 300px;  
+            position: absolute;
+            border-radius: 10px;
+            align-content: center;
+            font-size: 50px;
+            top: 225%;
+            left: 36%;
+        }
+		#sectioncalculator{
+            /*background-color: aqua;*/
+            width: 100%;
+			height: 750px;
+		}
+		#sectionparcelas{
+            /*background-color: blueviolet;*/
+            width: 100%;
+			height: 750px;
+		}
+		#sectionmega{
+            /*background-color:brown;*/
+            width: 100%;
+			height: 750px;
+
+        }
+        #sectionfinal{
+            /*background-color: aqua;*/
+            width: 100%;
+
+        }
+        .divback{
+			background-color: rgba(128,128,128, 0.5);
+            top: 20%;
+            left: 36%;
+			position: absolute;
+			width: 300px;
+			height: 300px;
+			border-radius: 10px;
+		}
+        .text{
+			position: absolute;
+			left: 7%;
+			top: 8%;
+			border-radius: 6px;
+			width: 250px;
+			height: 31px;
+			font-size: 18px;
+			text-align: right;
+			resize: none;
+		}
+		tr{
+			font-size: 20px;
+			background-color: rgba(128,128,128, 0.8);
+		}
+        input{
+			border-radius: 5px;
+		}
+        .parcelas{
+			background-color: rgba(128,128,128, 0.5);
+			position: absolute;
+            top: 140%;
+            left: 36%;
+			width: 300px;
+			height: 300px;
+			border-radius: 10px;
+		}
+        .gerador{
+			background-color: rgba(128,128,128, 0.5);
+			position: absolute;
+            top: 240%;
+            left: 36%;
+			width: 300px;
+			height: 300px;
+			border-radius: 10px;
+		}
+        .buttonDown{
+			position: absolute;
+			width: 120px;
+			height: 120px;
+			left: 50%;
+		}
+	</style>
+	<script type="text/javascript" src="js.js">
+	</script>
+</head>
+<body>
+	<div id="sectioncalculator">
+            <div class="titleheader"><center>Calculadora</center></div>
+        <div class="divback">
+      
+                <textarea class="text" name="display" id="divDisplay" readonly ></textarea>
+                <span >
+                    <input type="button" id="sum" value="+" style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 75%; top: 82%; position: absolute" onclick="calc('+')">
+                    <input type="button" name="-" id="va" value="-" style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 75%; top: 69%; position: absolute" onclick="calc('-')">
+                    <input type="button" name="*" id="va" value="*" style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 75%; top: 56%; position: absolute" onclick="calc('*')">
+                    <input type="button" name="/" id="va" value="÷" style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 75%; top: 43%; position: absolute" onclick="calc('/')">
+                    <input type="button" name="c" id="va" value="C" style="width: 123px; height: 30px; font-size: 20px; background-color: white; left: 52.3445%; top: 30%; position: absolute" onclick="calc('c')">
+                    <input type="button" name="%" id="va" value="%" style="width: 123px; height: 30px; font-size: 20px; background-color: white; left: 7%; top: 30%; position: absolute" onclick="calc('%')">
+                    <input type="button" name="7" id="va" value="7" style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 7%; top: 43%; position: absolute" onclick="display(7)">
+                    <input type="button" name="8" id="va" value="8" style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 29.689%; top: 43%; position: absolute" onclick="display(8)">
+                    <input type="button" name="9" id="va" value="9" style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 52.3445%; top: 43%; position: absolute" onclick="display(9)">
+                    <input type="button" name="4" id="va" value="4" style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 7%; top: 56%; position: absolute" onclick="display(4)">
+                    <input type="button" name="5" id="va" value="5" style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 29.689%; top: 56%; position: absolute" onclick="display(5)">
+                    <input type="button" name="6" id="va" value="6" style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 52.3445%; top: 56%; position: absolute" onclick="display(6)">
+                    <input type="button" name="1" id="va" value="1" style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 7%; top: 69%; position: absolute" onclick="display(1)">
+                    <input type="button" name="2" id="va" value="2" style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 29.689%; top: 69%; position: absolute" onclick="display(2)">
+                    <input type="button" name="3" id="va" value="3" style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 52.3445%; top: 69%; position: absolute" onclick="display(3)">
+                    <input type="button" name="." id="va" value="." style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 7%; top: 82%; position: absolute" onclick="display('.')">
+                    <input type="button" name="0" id="va" value="0" style="width: 55px; height: 30px; font-size: 20px; background-color: white; left: 29.689%; top: 82%; position: absolute" onclick="display(0)">
+                    <input type="button" name="=" id="va" value="=" style="width: 55px; height: 30px; font-size: 20px; background-color: #4169E1; left: 52.3445%; top: 82%; position: absolute" onclick="calc('=')">
+                </span>
+              
+            </div>
+            <center> <a href="#sectionparcelas" class="buttonDown" style="top: 70%; position: absolute;"><img src="down.png" width="50px" height="50px" alt=""/></a> </center>
+    </div>
+    
+    <div id="sectionparcelas">
+            <div class="titleheader2"><center>Parcelas</center></div>
+            <form>
+                    <div class="parcelas">
+                        <h3>Valor <input type="number" name="valor" id="idValor" class="text" value="valor" style="left: 16%; top: 5%; height: 28px; width: 100px;"></h3>
+                        <h3>Quantidade de Parcelas <input type="number" name="parcelas" class="text" id="idParcela" value="parcelas" style="left: 65%; top: 18%; height: 28px; width: 100px;"></h3>
+                        <input type="button" name="calcular" value="Calcular" onclick="calcPar()" style="width: 95px; height: 30px; font-size: 20px; background-color: white; left: 35%; top: 65%; position: absolute">
+                        <input type="button" name="calcular" value="Gerar tabelas de parcelas" onclick="createTable()" style="width: 250px; height: 30px; font-size: 20px; background-color: white; left: 10%; top: 82%; position: absolute">
+        
+                        <textarea class="text" name="display" id="idDisplay" readonly style="left: 7%; top: 50%"></textarea>
+        
+                    </div>
+                    <div id="divResultado" style="left: 70%; top: 120%; position: absolute;">
+                    </div>
+            </form>
+            <center> <a href="#sectionmega" class="buttonDown" style="top: 190%; position: absolute;"><img src="down.png" width="50px" height="50px" alt=""/></a> </center>
+
+    </div>
+
+	<div id="sectionmega">
+            <div class="titleheader3"><center>MegaSena</center></div>
+            <div class="gerador">
+                    <input type="button" style="width: 250px; height: 30px; font-size: 20px; background-color: white; left: 10%; top: 5%; position: absolute"  name="gerar" value="Gerador" onclick="gerarMega()">
+                    <div id="divNumeros" style="top: 50%;" class="text"></div>
+                </div>
+               
+    </div>
+    
+    <div id="sectionfinal"><center>Trabalho Web 1 - por Claésia Costa </center></div>
+</body>
+</html>
